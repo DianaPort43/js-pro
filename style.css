@@ -135,4 +135,40 @@ h3{
     color: var(--primary-light);
 }
   
+/* RULES */
+footer{
+    display: flex;
+    justify-content: center;
+}
+.foldable-section {
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 20px;
+    width: 80%;
+  }
+  
+  .foldable-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    color: var(--header);
+  }
+  
+  .fold-button {
+    width: 20px;
+    height: 20px;
+    background-color:var(--primary-dark);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .foldable-content {
+    padding: 10px;
+    display: none;
+  }
+  
+  .folded .foldable-content {
+    display: block;
+  }
+  
   
