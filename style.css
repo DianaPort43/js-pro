@@ -1,1 +1,103 @@
+:root {
+    --primary-light: #ddd;
+    --primary-dark: #222831;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #4a4f57;
+    --secondary-dark-active: #5b5f68;
+    --header: #111720;
+    --primary-yellow: #fac650;
+}
+body {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 100px;
+    padding: 0;
+    margin: 0;
+}
 
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0px;
+    background-color: var(--header);
+}
+  
+.title {
+    font-size: 32px;
+    color: var(--primary-yellow);
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* TEXT */
+.text{
+    text-align: center;
+}
+h2{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+h3{
+    font-size: 24px;
+    margin-top: 12px;
+}
+/*ROW*/
+.row{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.buttons-comp, .buttons-player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.btn,.btn-play{
+    border-radius: 10px;
+    background-color: var(--secondary-dark);
+    width: 160px;
+    height: 160px;
+}
+.dimmed{
+    opacity: 0.5;
+}
+.sign {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.btn-play:hover {
+    background-color: var(--secondary-dark-hover);
+}
+  
+.btn-play:active {
+    background-color: var(--secondary-dark-active);
+}
+
+
+.scores-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+}
+  
+.score-box {
+    width: 170px;
+    text-align: center;
+}
+  
+.score {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
